@@ -1,0 +1,595 @@
+/* ================= COLOR VARIABLES ================= */
+:root {
+    /* Backgrounds */
+    --bg-body-start: #051c2d;
+    --bg-body-end: #020b13;
+    --clr-gray-600: #4b5563;
+
+    /* Glass / Borders */
+    --glass-light: rgba(255, 255, 255, 0.06);
+    --glass-dark: rgba(255, 255, 255, 0.02);
+    --glass-border: rgba(255, 255, 255, 0.15);
+    --glass-soft: rgba(255, 255, 255, 0.08);
+
+    /* Dropdown */
+    --dropdown-bg: rgba(10, 20, 35, 0.95);
+
+    /* Text */
+    --text-white: #ffffff;
+    --text-black: #1d1e1e;
+    --text-hover: #c7d2fe;
+    --gray-color: #535353;
+    --green-color: #4CB862;
+    --light-white-color: rgba(255, 255, 255, 0.85);
+
+    /* Brand / Gradients */
+    --brand-gradient: linear-gradient(180deg, #00B9F1 0%, #037DB9 100%);
+    --cta-gradient: linear-gradient(180deg, #00B9F1 0%, #037DB9 100%);
+    --main-gradient: linear-gradient(180deg, #6EC1E4 0%, #105392 100%);
+
+    /* Shadows */
+    --cta-shadow: 0 8px 30px rgba(155, 123, 255, 0.35);
+}
+
+/* ================= BASE ================= */
+body {
+    font-family: "Inter", sans-serif;
+    color: var(--text-black);
+}
+
+.text-black {
+    color: var(--text-black) !important;
+}
+
+/* ================= NAVBAR ================= */
+.glass-navbar {
+    backdrop-filter: blur(14px);
+    background: linear-gradient(180deg, var(--glass-light), var(--glass-dark));
+    border-bottom: 1px solid var(--glass-border);
+}
+
+/* Logo gradient */
+.brand-gradient {
+    background: var(--brand-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Center pill menu */
+.nav-pill-menu {
+    background: var(--glass-soft);
+    border: 1px solid var(--glass-border);
+    border-radius: 999px;
+    padding: 8px 22px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Dropdown */
+.dropdown-menu-dark-custom {
+    background: var(--dropdown-bg);
+    border: 1px solid var(--glass-border);
+    border-radius: 12px;
+}
+
+/* Nav links */
+.nav-link {
+    color: #464949 !important;
+    font-size: 1.05rem;
+    font-weight: 600;
+}
+
+.nav-link:hover {
+    color: var(--text-hover) !important;
+}
+
+.bg-gray {
+    background: var(--gray-color);
+}
+
+.text-gray-600 {
+    color: var(--clr-gray-600) !important;
+}
+
+.text-green {
+    color: var(--green-color);
+}
+
+.bg-gray-600 {
+    background-color: var(--clr-gray-600) !important;
+}
+
+.bg-green {
+    background: var(--green-color);
+}
+
+/* CTA Button */
+.btn-gradient {
+    background: var(--cta-gradient);
+    border-radius: 999px;
+    padding: 10px 22px;
+    font-weight: 600;
+    color: var(--text-white);
+    box-shadow: var(--cta-shadow);
+    border: none;
+}
+
+.btn-gradient:hover {
+    opacity: 0.9;
+}
+
+/* Logo */
+.logo-img {
+    height: 42px;
+    width: auto;
+}
+
+/* Toggler */
+.navbar-toggler {
+    background: #000;
+}
+
+.navbar-dark .navbar-toggler-icon {
+    filter: brightness(0) invert(1);
+}
+
+/* ================= FOOTER ================= */
+.footer-links li {
+    margin-bottom: 10px;
+}
+
+.footer-links a {
+    color: rgba(255, 255, 255, 0.75);
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.footer-links a:hover {
+    color: #fff;
+}
+
+.footer-divider {
+    border-color: rgba(255, 255, 255, 0.15);
+}
+
+.footer-social {
+    color: rgba(255, 255, 255, 0.75);
+    font-size: 18px;
+}
+
+.footer-social:hover {
+    color: #fff;
+}
+
+/* ================= HERO ================= */
+.hero-section {
+    padding: 60px 0;
+    background: #fff;
+}
+
+/* Headline */
+.hero-title {
+    font-size: 38px;
+    font-weight: 300;
+    line-height: 1.2;
+    color: var(--text-black);
+}
+
+.hero-title span {
+    font-weight: 600;
+}
+
+/* Paragraph */
+.hero-text {
+    font-size: 16px;
+    line-height: 1.6;
+    color: rgb(70, 73, 73);
+    font-weight: 400;
+}
+
+/* CTA */
+.btn-teal {
+    background: #0f7c8a;
+    color: #fff;
+    border-radius: 999px;
+    padding: 10px 20px;
+    font-weight: 600;
+    border: none;
+    font-size: 16px;
+}
+
+.btn-teal:hover {
+    background: #0c6672;
+}
+
+/* ================= HERO VISUAL ================= */
+.hero-visual {
+    position: relative;
+}
+
+.ai-card {
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.12);
+    padding: 16px;
+}
+
+.card-small {
+    width: 180px;
+}
+
+.card-medium {
+    width: 320px;
+}
+
+.card-large {
+    width: 260px;
+}
+
+.card-1 {
+    position: absolute;
+    top: 0;
+    left: 40%;
+}
+
+.card-2 {
+    position: absolute;
+    top: 180px;
+    left: 0;
+}
+
+.card-3 {
+    position: absolute;
+    top: 120px;
+    right: 0;
+}
+
+/* Wave */
+.wave {
+    position: absolute;
+    bottom: -40px;
+    left: -80px;
+    width: 120%;
+    opacity: 0.4;
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 991px) {
+    .nav-pill-menu {
+        flex-direction: column;
+        border-radius: 16px;
+        padding: 16px;
+        width: 100%;
+    }
+
+    .hero-title {
+        font-size: 28px;
+    }
+
+    .hero-text,
+    .btn-teal {
+        font-size: 14px;
+    }
+
+    .hero-visual {
+        margin-top: 60px;
+    }
+
+    .card-1,
+    .card-2,
+    .card-3 {
+        position: static;
+        margin-bottom: 20px;
+    }
+}
+
+/* Large screens */
+@media (min-width: 1780px) {
+    .container {
+        max-width: 1500px;
+    }
+
+    .hero-title {
+        font-size: 48px;
+    }
+
+    .hero-text {
+        font-size: 18px;
+    }
+
+    .btn-teal {
+        padding: 13px 24px;
+    }
+}
+
+/* Section background */
+.clinician-section {
+    padding: 100px 0;
+    background: var(--main-gradient);
+    color: #ffffff;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Ensure all images in cards have the same height and alignment */
+.feature-card img {
+    height: 100%;
+    /* Force consistent height */
+    width: auto;
+    /* Maintain aspect ratio */
+    object-fit: contain;
+    /* Ensure the whole image is visible without cropping */
+}
+
+/* Optional: Set a fixed height for the container to keep spacing uniform */
+.img-container {
+    height: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+
+/* Cards */
+.feature-card {
+    background: #ffffff;
+    color: #1d1e1e;
+    border-radius: 20px;
+    padding: 40px 30px;
+    box-shadow: 0 25px 60px rgba(0, 0, 0, 0.2);
+    height: 100%;
+}
+
+.column-title {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.column-para {
+    font-size: 16px;
+    color: #5f6c6d;
+}
+
+/* Icons */
+.icon-circle {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: rgba(15, 124, 138, 0.15);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon-circle.large {
+    background: #0f7c8a;
+}
+
+.icon-arrow {
+    font-size: 28px;
+    color: #ffffff;
+}
+
+.icon-light {
+    color: #0f7c8a;
+    font-size: 24px;
+}
+
+
+/* Responsive */
+@media (max-width: 991px) {
+    .clinician-title {
+        font-size: 32px;
+    }
+
+    .feature-card {
+        padding: 30px 24px;
+    }
+}
+
+.gradient-text {
+    background-color: #f3ec78;
+    background-image: linear-gradient(360deg, #0A7DB8, #23B6EA);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
+
+
+
+/* General Typography & Section */
+.capture-section {
+    background-color: var(--text-white);
+    overflow: hidden;
+}
+
+.x-small {
+    font-size: 0.7rem;
+}
+
+/* Container for the overlapping elements */
+.capture-visual-wrapper {
+    position: relative;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Section */
+.workflow-section {
+    background: #ffffff;
+}
+
+
+
+/* Wrapper */
+.workflow-wrapper {
+    background: #f9fafb;
+}
+
+/* Left content */
+.workflow-desc {
+    font-size: 16px;
+
+
+}
+
+.workflow-list li {
+    position: relative;
+    padding-left: 28px;
+    margin-bottom: 14px;
+    color: #374151;
+}
+
+.workflow-list li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: #0f7c8a;
+    font-weight: 700;
+}
+
+
+
+
+/* Wrapper */
+.testimonial-row-wrapper {
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+}
+
+/* Track */
+.testimonial-track {
+    display: flex;
+    gap: 24px;
+    width: max-content;
+    will-change: transform;
+}
+
+/* LEFT → RIGHT */
+.track-ltr {
+    animation: marquee-left 40s linear infinite;
+}
+
+/* RIGHT → LEFT */
+.track-rtl {
+    animation: marquee-right 40s linear infinite;
+}
+
+/* Pause on hover */
+.testimonial-row-wrapper:hover .testimonial-track {
+    animation-play-state: paused;
+}
+
+/* Card */
+.testimonial-card {
+    min-width: 320px;
+    background: #fff;
+    border: 1px solid #e5e7eb;
+    border-radius: 20px;
+    padding: 28px;
+    margin-bottom: 10px;
+}
+
+/* Animations */
+@keyframes marquee-left {
+    from {
+        transform: translate3d(0, 0, 0);
+    }
+
+    to {
+        transform: translate3d(-50%, 0, 0);
+    }
+}
+
+@keyframes marquee-right {
+    from {
+        transform: translate3d(-50%, 0, 0);
+    }
+
+    to {
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+/* Responsive */
+@media (max-width: 991px) {
+    .testimonial-card {
+        min-width: 260px;
+    }
+
+    .track-ltr,
+    .track-rtl {
+        animation-duration: 60s;
+    }
+}
+
+
+.security-section {
+    background: #ffffff;
+}
+
+/* Card */
+.security-card {
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 18px;
+    padding: 28px 22px;
+    transition: all 0.3s ease;
+}
+
+.security-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 18px 40px rgba(0, 0, 0, 0.08);
+}
+
+/* Icon */
+.security-icon {
+    max-height: 60px;
+    width: auto;
+}
+
+/* Header default */
+#site-header {
+    position: relative;
+    width: 100%;
+    z-index: 999;
+}
+
+/* Sticky state */
+#site-header.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 10px 30px rgb(37 155 210 / 12%);
+    animation: slideDown 0.35s ease;
+}
+
+/* Slide animation */
+@keyframes slideDown {
+    from {
+        transform: translateY(-100%);
+    }
+
+    to {
+        transform: translateY(0);
+    }
+}
+
+.workflow-wrapper {
+    transition: transform 0.3s ease;
+}
+
+.workflow-wrapper:hover {
+    transform: translateY(-4px);
+}
+
